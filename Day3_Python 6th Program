@@ -1,0 +1,90 @@
+Dheena wants to know how the grading marks will works in education.could you please help him to learn the grading System. Note:-
+
+100=Grade is S
+90-99=Grade is A
+80-89=Grade is B
+70-79=Grade is C
+60-69=Grade is D
+50-59=Grade is E
+<50=Fail
+Get the subject marks from the user,then Find the average marks.Based on the average marks generate the Students grade marks.
+
+Input Format
+
+First input consists of String
+Second input consists of integer
+Third input consists of integer
+Fourth input consists of integer
+Fifth input consists of integer
+Sixth input consists of integer
+Constraints
+
+No Constraints
+
+Output Format
+
+execute the total Marks,average marks and Grade Mark
+Sample Input 0
+
+John
+100
+99
+100
+100
+99
+Sample Output 0
+
+Name of the Student:John
+Total Mark:498
+Average Mark:99.6
+Grade Mark:A
+Sample Input 1
+
+Nivi
+30
+30
+30
+30
+30
+Sample Output 1
+
+Name of the Student:Nivi
+Total Mark:150
+Average Mark:30.0
+Grade Mark:Fail
+
+#code:
+name = input()
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+e=int(input())
+
+total = a+b+c+d+e
+avg = total/5
+
+print(f"Name of the Student:{name}")
+print(f"Total Mark:{total}")
+print(f"Average Mark:{avg}")
+if (a<50 or b<50 or c<50 or d<50 or e<50):
+    grade = "Fail"
+    print(f"Grade Mark:{grade}")
+elif(a<= 59 or b<=59 or c<=59 or d<=59 or e<=59):
+    grade = "E"
+    print(f"Grade Mark:{grade}")
+elif(a<= 69 or b<=69 or c<=69 or d<=69 or e<=69):
+    grade = "D"
+    print(f"Grade Mark:{grade}")
+elif(a<= 79 or b<=79 or c<=79 or d<=79 or e<=79):
+    grade = "C"
+    print(f"Grade Mark:{grade}")
+elif(a<= 89 or b<=89 or c<=89 or d<=89 or e<=89):
+    grade = "B"
+    print(f"Grade Mark:{grade}")
+elif(a<= 99 or b<=99 or c<=99 or d<=99 or e<=99):
+    grade = "A"
+    print(f"Grade Mark:{grade}")
+else:
+    grade = "S"
+    print(f"Grade Mark:{grade}")
