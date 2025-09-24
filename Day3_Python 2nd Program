@@ -1,0 +1,16 @@
+#Write a program for doing certain operations on bank deposits , balance and withdraw
+balance_amount=int(input())
+process=int(input())
+if(process==1):
+    print("Deposit")
+    deposit_amount=int(input())
+    print("The current balance is",balance_amount+deposit_amount)
+elif(process==2):
+      print("Withdraw")
+    withdraw_amount=int(input())
+    if(balance_amount>withdraw_amount):
+        print("current balance is:",balance_amount-withdraw_amount)
+    else:
+        print("Insufficient balance")
+else:
+    print("Invalid Input")
