@@ -1,0 +1,14 @@
+#Write a program for calculating spending amount with managing bank savings,hostel,food,parents
+#and also display whether he can save money or to manage or to work more hard.
+salary=int(input())
+bank=int(input())
+food=int(input())
+hostel=int(input())
+parents=int(input())
+spend=bank+food+hostel+parents
+if(spend<salary):
+    print("He can save money")
+elif(spend==salary):
+    print("He can manage salary")
+else:
+    print("He need to work hard")
