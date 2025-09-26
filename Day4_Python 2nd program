@@ -24,7 +24,18 @@ Sample Input 1
 23
 Sample Output 1
 
-The Even Sum value is 102.00start = int(input())
+The Even Sum value is 102.00
+The Odd Sum value is 119.00
+Sample Input 2
+
+100
+200
+Sample Output 2
+
+Invalid Input
+
+#code:
+start = int(input())
 end = int(input())
 
 if start < 1 or end > 100:
@@ -39,13 +50,3 @@ else:
             odd_sum += i
     print("The Even Sum value is %.2f" % even_sum)
     print("The Odd Sum value is %.2f" % odd_sum)
-
-The Odd Sum value is 119.00
-Sample Input 2
-
-100
-200
-Sample Output 2
-
-Invalid Input
-Code:
