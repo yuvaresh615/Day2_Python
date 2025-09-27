@@ -1,0 +1,38 @@
+Write a program to execute the Pattern.
+
+Input Format
+
+Input consists single Integer.
+
+Constraints
+
+Constraints
+
+Output Format
+
+Execute the pattern
+
+Sample Input 0
+
+4
+Sample Output 0
+
+* * * *
+* 1 2 *
+* 3 4 *
+* * * *
+
+#code:
+a=int(input())
+count=0
+for i in range(1,a+1):
+    for j in range(1,a+1):
+        if ((j==1 or j==a) or (i==1 or i==a)):
+            print("*",end=' ')
+        else:
+            count+=1
+            print(count,end =' ')
+            
+    print()
+        
+        
